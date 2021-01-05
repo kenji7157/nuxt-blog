@@ -30,6 +30,24 @@ create-nuxt-app v3.4.0
    - body/本文/リッチエディタ
 - API叩くときはaxiosモジュールを利用
 
+## Netlifyの登録
+参考記事：https://microcms.io/blog/microcms-nuxt-jamstack-blog/
+- githubアカウントで登録
+- create siteでgithub上の本リポジトリを選択
+- デプロイにに少々時間が掛かる
+- カスタムドメインは有料なのでとりあえず(netlify.app)で我慢
+- https://nuxt-blog-practice.netlify.app/
+
+## micro cmsで記事登録したらデプロイされるようにする方法
+Netlifyのビルドフックにmicro cmsを登録
+- Build hook name: microCMS
+- branch to build: master
+登録するとエンドポイントが作成されるのでURLをコピー
+
+micro cmsで
+- API設定 > Webhook からNetlifyを選択します。
+- 上記URLを登録する
+
 ## Build Setup
 
 ```bash
