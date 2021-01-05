@@ -1,6 +1,6 @@
 # kk-nuxt-blog
 
-- プロジェクト作成時の初期設定
+## プロジェクト作成時の初期設定
 ```
 -> % create-nuxt-app kk-nuxt-blog
 
@@ -19,6 +19,16 @@ create-nuxt-app v3.4.0
 ? Continuous integration: None
 ? Version control system: Git
 ```
+
+## micro cmsの登録
+参考記事：https://microcms.io/blog/microcms-nuxt-jamstack-blog/
+- 開発メアドで登録
+- サービス名：kk-nuxt-blog
+- APIの型：リスト形式
+- APIスキーマ定義
+   - title/タイトル/テキストフィールド
+   - body/本文/リッチエディタ
+- API叩くときはaxiosモジュールを利用
 
 ## Build Setup
 
